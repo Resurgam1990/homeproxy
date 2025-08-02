@@ -1,7 +1,8 @@
 name: Build ipk for HomeProxy
 
 on:
-  push:
+  #push:
+  workflow_dispatch:
     branches:
       - 'master'
       - 'dev'
