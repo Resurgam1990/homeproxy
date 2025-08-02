@@ -1,4 +1,4 @@
-name: Build ipk for HomeProxy
+name: myHomeProxy
 
 on:
   workflow_dispatch:
@@ -26,4 +26,5 @@ jobs:
         with:
           repo_token: ${{ github.token }}
           file: .github/${{ env.ASSET_NAME }}
+
           tag: ${{ github.ref }}
